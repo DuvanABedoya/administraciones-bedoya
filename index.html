@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Administraciones Bedoya</title>
+<meta name="description" content="Administración de propiedad horizontal en Cali. Vive tranquilo, vive mejor.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#04183B; --navy-2:#0A2A5E; --azul:#1F4E9A; --claro:#EEF3FA;
+    --texto:#1B2433; --gris:#5A6577; --blanco:#fff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Montserrat,"Segoe UI",sans-serif;color:var(--texto);background:var(--blanco);line-height:1.6}
+  a{color:inherit}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+
+  header{position:sticky;top:0;z-index:10;background:var(--navy);color:var(--blanco)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .marca{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;letter-spacing:.04em;font-size:.95rem}
+  .marca img{height:38px;border-radius:50%}
+  nav a{text-decoration:none;margin-left:22px;font-size:.9rem;opacity:.85}
+  nav a:hover{opacity:1}
+
+  .hero{background:var(--navy);color:var(--blanco);text-align:center;padding:40px 0 70px}
+  .hero img{width:min(420px,85%);display:block;margin:0 auto}
+  .hero p{max-width:620px;margin:10px auto 28px;opacity:.85}
+  .btn{display:inline-block;background:var(--blanco);color:var(--navy);padding:13px 26px;border-radius:6px;font-weight:600;text-decoration:none}
+  .btn.borde{background:transparent;color:var(--blanco);border:1px solid rgba(255,255,255,.5);margin-left:10px}
+
+  section{padding:70px 0}
+  h2{font-size:1.7rem;color:var(--navy);margin-bottom:8px}
+  .sub{color:var(--gris);margin-bottom:36px;max-width:640px}
+  .gris{background:var(--claro)}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .card{background:var(--blanco);border:1px solid #DCE4F0;border-radius:10px;padding:24px}
+  .card h3{font-size:1rem;color:var(--navy-2);margin-bottom:8px;text-transform:uppercase;letter-spacing:.03em}
+  .card p{color:var(--gris);font-size:.93rem}
+
+  .mv{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+  .mv h3{color:var(--azul);margin-bottom:6px}
+
+  .unidades{display:flex;flex-wrap:wrap;gap:12px}
+  .unidades span{background:var(--navy);color:var(--blanco);padding:10px 18px;border-radius:30px;font-size:.9rem;font-weight:500}
+
+  .contacto{background:var(--navy);color:var(--blanco);text-align:center}
+  .contacto h2{color:var(--blanco)}
+  .contacto .sub{color:rgba(255,255,255,.75);margin:0 auto 30px}
+  .datos{margin-top:28px;display:flex;flex-direction:column;gap:6px;opacity:.9}
+
+  footer{background:#020F27;color:rgba(255,255,255,.6);text-align:center;padding:22px 0;font-size:.82rem}
+
+  @media (max-width:640px){
+    nav{display:none}
+    .btn.borde{margin:12px 0 0}
+    section{padding:50px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="marca" href="#"><img src="img/isotipo.jpg" alt="">ADMINISTRACIONES BEDOYA</a>
+    <nav>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#unidades">Unidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <img src="img/logo.jpg" alt="Administraciones Bedoya — Vive tranquilo, vive mejor">
+    <p>Administración de propiedad horizontal en Cali. Conjuntos y edificios bien llevados: cuentas claras, convivencia en orden y un administrador que sí responde.</p>
+    <a class="btn" href="https://wa.me/573165450339" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    <a class="btn borde" href="#servicios">Ver servicios</a>
+  </div>
+</div>
+
+<section id="nosotros">
+  <div class="wrap">
+    <h2>Quiénes somos</h2>
+    <p class="sub">Somos una empresa familiar con experiencia en la administración de conjuntos residenciales, caracterizados por nuestro compromiso, responsabilidad y cercanía con cada comunidad que gestionamos.</p>
+    <div class="mv">
+      <div>
+        <h3>Misión</h3>
+        <p>Ofrecer servicios de administración con altos estándares de calidad, enfocados en la transparencia, el orden financiero y el bienestar de los residentes, generando confianza en cada proceso.</p>
+      </div>
+      <div>
+        <h3>Visión</h3>
+        <p>Consolidarnos como una empresa líder en el sector, reconocida por nuestra experiencia, innovación y excelencia en la gestión de propiedades horizontales.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="gris">
+  <div class="wrap">
+    <h2>Servicios</h2>
+    <p class="sub">Soluciones integrales para que la copropiedad funcione bien y su valor se mantenga.</p>
+    <div class="grid">
+      <div class="card"><h3>Administración integral</h3><p>Gestión completa de la copropiedad: asambleas, cumplimiento normativo y convivencia.</p></div>
+      <div class="card"><h3>Gestión financiera</h3><p>Manejo eficiente de recursos, control presupuestal, recaudo de cuotas y reportes claros y periódicos.</p></div>
+      <div class="card"><h3>Mantenimiento</h3><p>Programas preventivos y correctivos para áreas comunes e infraestructura.</p></div>
+      <div class="card"><h3>Seguridad</h3><p>Supervisión de la empresa de vigilancia, protocolos y control de accesos.</p></div>
+      <div class="card"><h3>Asesoría legal</h3><p>Acompañamiento jurídico en propiedad horizontal, manejo de conflictos y respaldo permanente.</p></div>
+      <div class="card"><h3>Atención cercana</h3><p>Canales directos de comunicación y respuesta oportuna a las necesidades de la comunidad.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="unidades">
+  <div class="wrap">
+    <h2>Unidades que administramos</h2>
+    <p class="sub">Comunidades en Cali que hoy confían en nosotros.</p>
+    <div class="unidades">
+      <span>Conjunto Residencial Aguamarina</span>
+      <span>Edificio Balcones de Lacordaire</span>
+      <span>Cataya Real</span>
+      <span>Masaya</span>
+      <span>Prados de Horizonte 1</span>
+      <span>Rincón del Viento II</span>
+      <span>Edificio Saint Tropez</span>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="contacto">
+  <div class="wrap">
+    <h2>¿Tu conjunto necesita administración?</h2>
+    <p class="sub">Cuéntanos de tu copropiedad y te enviamos una propuesta.</p>
+    <a class="btn" href="https://wa.me/573165450339" target="_blank" rel="noopener">WhatsApp 316 545 0339</a>
+    <div class="datos">
+      <a href="mailto:duvan.bedoya@administracionesbedoya.com">duvan.bedoya@administracionesbedoya.com</a>
+      <a href="mailto:jose.bedoya@administracionesbedoya.com">jose.bedoya@administracionesbedoya.com</a>
+      <span>Cali, Valle del Cauca</span>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Administraciones Bedoya · Vive tranquilo, vive mejor</footer>
+
+</body>
+</html>
